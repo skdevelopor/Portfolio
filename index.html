@@ -1,138 +1,368 @@
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-  rel="stylesheet"
-/>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="musicsec">
-      <img class="simage" src="images/mp.png" alt="music" />
-      <h2 class="sOn" id="soundOn" onclick="myFunction()">OFF</h2>
-    </div>
-    <div class="containerintro">
-      <div class="yep">
-        <div class="yep1">
-          <div class="adds">
-            <h1>
-              <div class="hi"><span>H</span><span>i</span><span>,</span></div>
+body {
+  background-color: #1a1717;
+  color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+}
 
-              <span>I</span>&nbsp<span>a</span><span>m</span>
-              <img class="imk simage" src="images/s1.png" alt="hello" />
-              <span>i</span><span>d</span><span>d</span><span>h</span
-              ><span>a</span><span>r</span><span>t</span><span>h</span><br />
-              <div class="join">
-                <span>A</span><span>p</span><span>p</span>, <span>W</span
-                ><span>e</span><span>b</span><span> </span><span>D</span
-                ><span>e</span><span>v</span><span>e</span><span>l</span
-                ><span>o</span><span>p</span><span>e</span><span>r</span>.
-              </div>
-            </h1>
-          </div>
-          <h2>Front End Developer And Android Studio Expert</h2>
-          <div class="contactme">
-            <h1>Contact me!</h1>
-          </div>
-        </div>
-        <div class="yep2">
-          <img class="sy simage" src="images/s2.png" alt="" />
-        </div>
-      </div>
-    </div>
+.musicsec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
 
-    <!--  ....................................................................................................................................-->
+.musicsec h2 {
+  margin: 0;
+  color: red;
+  font-size: 2rem;
+  padding-top: 3px;
+}
 
-    <audio
-      id="a123"
-      src="images/yt1s.com - Red Right Hand  Peaky Blinders.mp3"
-    ></audio>
+.musicsec img {
+  margin: 0;
+}
 
+.containerintro {
+  font-family: "Oswald", sans-serif;
+  padding-top: 40%;
+  padding-bottom: 40%;
+  letter-spacing: 0.2rem;
+  padding-left: 5%;
+  padding-right: 13%;
+}
 
+.containerintro h2 {
+  color: #8d8d8d;
+}
 
+.containerintro .contactme {
+  padding: 0;
+  margin: 0;
+}
 
+.containerintro .contactme h1 {
+  color: aquamarine;
+  border: mediumspringgreen solid 5px;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 5px 10px 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
-    <div class="newset">
-      <div class="AboutMe">
-        <h1>Myself & I</h1>
-        <h2>
-          I am a Front-End Developer , Android App Developer Locatd in India,have Serious Passion For UI/UX.
-          <br>Well Organized,Problem Solver. <br>
-          Fan of Elon Musk.
-        </h2>
-   
-   
-       </div>
-       <div class="aboutMePage">
-         <h1>My Portfolio</h1>
-         <h2>A Small gallery of recent works ...</h2>
-      
-   
-   <div class="gallery">
-     <img class="galleryImages" onclick="func(this)" src="images/cert/UI participation certificate Siddharth.jpg" alt="">
-     <img class="galleryImages" onclick="func(this)" src="images/cert/aap dev.jpg" alt="">
-     <img class="galleryImages" onclick="func(this)" src="images/cert/amitybasicinjava.jpg" alt="">
-     <img class="galleryImages" onclick="func(this)" src="images/cert/CCA-Certificate-Java Level 1.jpg" alt="">
-     <img class="galleryImages" onclick="func(this)" src="images/cert/CCA-Certificate-Java Level 2.jpg" alt="">
-     <img class="galleryImages" onclick="func(this)" src="images/cert/gizmo.jpg" alt="">
-     <img class="galleryImages" onclick="func(this)" src="images/cert/sttpcmrit.jpg" alt="">
-     <img class="galleryImages" onclick="func(this)" src="images/cert/CKKKV5NWXQ.png" alt="">
-   
-   </div>
-   <div class="prev">
-   <img id ="intox" onclick="this.parentElement.style.display='none'" src="images/close.png" alt="">
-   <img id ="cc"src="images/cert/aap dev.jpg" alt="">
-   </div>
-   
-   </div>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-         <div class="mySkills">
-           <h1>SKILLS AND EXPERIENCE</h1>
-           <h2>
-             I can create Successful Resposive Websites That are easy and Fast to
-             use.
-             <ul>
-               <li>
-                 Front End
-                 <ul>
-                   <li>Html</li>
-                   <li>css</li>
-                   <li>javascript</li>
-                   <li>figma</li>
-                 </ul>
-               
-               </li>
-               <li>
-                 Android App Developement
-                 <ul>
-                   <li>java</li>
-                   <li>Android Studio</li>
-                   <li>Mysql</li>
-                 </ul>
-                
-               </li>
-             </ul>
-   
-             <ul></ul>
-           </h2>
-         </div>
-    
-   
-    </div>
-    <script src="index.js"></script>
-  </body>
-</html>
+.imk {
+  width: 25%;
+  margin-right: -8%;
+  margin-bottom: -10%;
+  margin-left: -5%;
+}
+
+span:hover {
+  color: cyan;
+}
+
+.yep {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+            transform: translate(2px, 2px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-2px, -3px) rotate(-1deg);
+            transform: translate(-2px, -3px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-4px, 1px) rotate(1deg);
+            transform: translate(-4px, 1px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(4px, 3px) rotate(0deg);
+            transform: translate(4px, 3px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(2px, -2px) rotate(1deg);
+            transform: translate(2px, -2px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-2px, 3px) rotate(-1deg);
+            transform: translate(-2px, 3px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+            transform: translate(2px, 2px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(-2px, -3px) rotate(-1deg);
+            transform: translate(-2px, -3px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-4px, 1px) rotate(1deg);
+            transform: translate(-4px, 1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(4px, 3px) rotate(0deg);
+            transform: translate(4px, 3px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(2px, -2px) rotate(0deg);
+            transform: translate(2px, -2px) rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+            transform: translate(2px, 2px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-2px, -3px) rotate(-1deg);
+            transform: translate(-2px, -3px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-4px, 1px) rotate(1deg);
+            transform: translate(-4px, 1px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(4px, 3px) rotate(0deg);
+            transform: translate(4px, 3px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(2px, -2px) rotate(1deg);
+            transform: translate(2px, -2px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-2px, 3px) rotate(-1deg);
+            transform: translate(-2px, 3px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+            transform: translate(2px, 2px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(-2px, -3px) rotate(-1deg);
+            transform: translate(-2px, -3px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-4px, 1px) rotate(1deg);
+            transform: translate(-4px, 1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(4px, 3px) rotate(0deg);
+            transform: translate(4px, 3px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(2px, -2px) rotate(0deg);
+            transform: translate(2px, -2px) rotate(0deg);
+  }
+}
+
+span:hover {
+  -webkit-animation: wiggle 1s;
+          animation: wiggle 1s;
+}
+
+.simage {
+  -webkit-animation: roundup 2s ease-out 1s;
+          animation: roundup 2s ease-out 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes roundup {
+  0% {
+    -webkit-transform: rotate(0deg) translate(1000px, 100px);
+            transform: rotate(0deg) translate(1000px, 100px);
+  }
+  100% {
+    -webkit-transform: rotate(1800deg) translate(10px, 10px);
+            transform: rotate(1800deg) translate(10px, 10px);
+  }
+}
+
+@keyframes roundup {
+  0% {
+    -webkit-transform: rotate(0deg) translate(1000px, 100px);
+            transform: rotate(0deg) translate(1000px, 100px);
+  }
+  100% {
+    -webkit-transform: rotate(1800deg) translate(10px, 10px);
+            transform: rotate(1800deg) translate(10px, 10px);
+  }
+}
+
+join {
+  white-space: nowrap;
+}
+
+#soundOn {
+  cursor: pointer;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery img {
+  width: 10%;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: .4;
+}
+
+.gallery img:hover {
+  opacity: 1;
+}
+
+.prev {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.prev {
+  margin-top: 30px;
+}
+
+.prev img {
+  width: 100%;
+}
+
+#intox {
+  width: 5%;
+  top: -45px;
+  right: -8px;
+  position: absolute;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.newset h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: #c3073f;
+  font-size: 1rem;
+  border: groove 10px;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.AboutMe {
+  padding: 12%;
+}
+
+.AboutMe h2 {
+  margin-bottom: 20%;
+}
+
+.aboutMePage {
+  padding: 12%;
+}
+
+.aboutMePage h1 {
+  margin-top: 20%;
+}
+
+.mySkills {
+  padding: 12%;
+  margin-bottom: 10%;
+}
+
+.mySkills h1 {
+  margin-top: 10%;
+}
+
+.nowwrap {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 330px) {
+  .sy {
+    display: none;
+  }
+}
+
+.contactme h1:hover {
+  color: black;
+}
+
+h1 {
+  -webkit-animation: swaggy 5s linear;
+          animation: swaggy 5s linear;
+}
+
+@-webkit-keyframes swaggy {
+  0% {
+    -webkit-transform: translate(800px, 10px) rotate(0deg);
+            transform: translate(800px, 10px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(500px, -10px) rotate(40deg);
+            transform: translate(500px, -10px) rotate(40deg);
+  }
+  40% {
+    -webkit-transform: translate(400px, 10px) rotate(-40deg);
+            transform: translate(400px, 10px) rotate(-40deg);
+  }
+  60% {
+    -webkit-transform: translate(300px, -10px) rotate(40deg);
+            transform: translate(300px, -10px) rotate(40deg);
+  }
+  80% {
+    -webkit-transform: translate(200px, 10px) rotate(-40deg);
+            transform: translate(200px, 10px) rotate(-40deg);
+  }
+  100% {
+    -webkit-transform: translate(10px, -10px) rotate(40deg);
+            transform: translate(10px, -10px) rotate(40deg);
+  }
+}
+
+@keyframes swaggy {
+  0% {
+    -webkit-transform: translate(800px, 10px) rotate(0deg);
+            transform: translate(800px, 10px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(500px, -10px) rotate(40deg);
+            transform: translate(500px, -10px) rotate(40deg);
+  }
+  40% {
+    -webkit-transform: translate(400px, 10px) rotate(-40deg);
+            transform: translate(400px, 10px) rotate(-40deg);
+  }
+  60% {
+    -webkit-transform: translate(300px, -10px) rotate(40deg);
+            transform: translate(300px, -10px) rotate(40deg);
+  }
+  80% {
+    -webkit-transform: translate(200px, 10px) rotate(-40deg);
+            transform: translate(200px, 10px) rotate(-40deg);
+  }
+  100% {
+    -webkit-transform: translate(10px, -10px) rotate(40deg);
+            transform: translate(10px, -10px) rotate(40deg);
+  }
+}
+
+.onhover:hover {
+  -webkit-animation: wiggle 1s;
+          animation: wiggle 1s;
+}
+/*# sourceMappingURL=index.css.map */
